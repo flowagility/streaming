@@ -2,6 +2,7 @@
 Some text about how cool we are :)
 
 ## Contents
+- [Streaming API](#streaming-api)
 - [Flows and Statuses](#flows-and-statuses)
 - [Requests & Responses](#request--response)
 - [JSON messages](#json-messages)
