@@ -25,7 +25,7 @@ There are 2 requests that are supported by the FA platform at the moment:
 - `__ping__` - message to check the connection with the server and to keep connection open. Should be sent with the interval of less than 60 seconds. Platform will response with the message `__pong__`
 - `streaming_data` - message to be sent at any moment to receive the JSON message with the current data on the run and playset.
 
-All responses are generated and broadcasted when run/playset information was changed on the Platform.
+All other JSON messages from the platform are generated and broadcasted when run/playset information was changed on the Platform.
 
 
 ## JSON Messages
