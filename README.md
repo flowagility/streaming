@@ -763,7 +763,7 @@ When first playset is getting the Refusal
 ```
 
 
-## JSON Messages Format
+## Message Variables Format
 The following section describes JSON messages format and variables, that are broadcasted during event.
 
 Message when the start order (SO) for the first run for that date and ring is not set yet:
