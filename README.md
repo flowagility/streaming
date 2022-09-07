@@ -2,10 +2,10 @@
 Some text about how cool we are :)
 
 ## Contents
-- [Flows and Statuses](https://github.com/flowagility/streaming#flows-and-statuses)
-- [Requests & Responses](https://github.com/flowagility/streaming#request--response)
-- [JSON messages](https://github.com/flowagility/streaming#json-messages)
-- [JSON Messages Format](https://github.com/flowagility/streaming#json-messages-format)
+- [Flows and Statuses](#flows-and-statuses)
+- [Requests & Responses](#request--response)
+- [JSON messages](#json-messages)
+- [JSON Messages Format](#json-messages-format)
 
 ## Streaming JSON Messages
 In order to receive actual data on participants, running in the certain ring, Streamer needs to connect via websocket to FA platform using the URL which is provided by the platform and which is unique to a certain event, date and ring. Information is then send as JSON message, which is having different structure, depending on the phase of the competition. The following description is covering the formats, statuses and variables, that are used in these JSON messages.
