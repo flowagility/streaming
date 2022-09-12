@@ -21,6 +21,16 @@ JSON messages are sent on any updated of active run and also when binom is getti
 
 After the playset is sbumitted, platform is doing calculation of the results and sends up to 10 best results for this run together with calculated current playset data.
 
+## Joana version - Flows and Statuses
+
+An Agility Event has one or more rings were all the competition takes place according to a predefined schedule. Independently of what trials and what runs happen on each ring, the information we will send is per ring per day, and fully organised according to the ring schedule. In situations where we will have “Combined Results”, they are added to the streaming information after the last run of those combined results is completed.
+
+Playset is representing a binomial, which is running in a certain run. Playset has handler and dog information and is also showing faults, refusals, disqualification and time, as well as classification, speed and total penalizations. Playset may have several states. Each run starts with the first playset ready to run. At events where timer is connected to the platform, as soon as the dog crosses the start gates, the playset is set to `running`. On events without the timer connected, playset may be set to running with the first fault, refusal or when binom is eliminated. Playset is set into calculated, when binomial data is submitted by the Judge Helper to the platform.
+
+JSON messages are sent on any updated of active run and also when binomial is getting a fault, refusal, disqualification or when timer starts and stops (for events with timer only). JSON message is usually covering the run, where the binomial is ready/running/calculated and the next binomial - whether it is in the current run or in a new one - this information is presented in a `run_ready` structure. If `run` and `run_ready` runs names are equal, then the next binomial is still from the same run, otherwise the next binomial is from another run.
+
+After the playset is submitted, platform is doing calculation of the results and sends up to 10 best results for this run together with calculated current playset data.
+
 ## Request / Response
 There are 3 requests that are supported by the FA platform at the moment:
 - `ping` - message to check the connection with the server and to keep connection open. Should be sent with the interval of less than 60 seconds. Platform will response with the message `pong`
@@ -33,7 +43,7 @@ All other JSON messages from the platform are generated and broadcasted when run
 ## JSON Messages
 The following examples are representing JSON messages which will be broadcasted during the event.
 
-### 1. When CI and SO is not set for the first run of the day/ring
+### 1. When CI (course info) and SO (start order) is not set for the first run of the day/ring
 ```json
 {
   "error": "Runs are not ready yet"
@@ -161,7 +171,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 4. When first playset is disqualificationualificationified by the Judge
+### 4. When first playset is disqualified by the Judge
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
@@ -296,7 +306,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 6. When second playset of the 2-playsets run (1st brother - without combined) is submitted
+### 6. When second playset of the 2-playsets run (1st run-pair - without combined results) is submitted
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
@@ -386,7 +396,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 7. When the 2nd brother SO is set (run-ready information is showing the run which is ready to start)
+### 7. When the 2nd run-pair SO is set (run-ready information is showing the run which is ready to start)
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
@@ -504,7 +514,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 8. When 2nd brother's 1st playset got first Fault
+### 8. When 2nd run-pair 1st playset got first Fault
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
@@ -545,7 +555,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 9. When 2nd brother's 1st playset is submitted
+### 9. When 2nd run-pair 1st playset is submitted
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
@@ -639,7 +649,7 @@ When first playset is getting the Refusal
 }
 ```
 
-### 10. When 2nd brother last playset is submitted
+### 10. When 2nd run-pair last playset is submitted
 ```json
 {
   "event_name": "RSCE Pawer 26-27-28 Agosto / 2-3-4 Septiembre",
