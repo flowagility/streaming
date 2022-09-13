@@ -1,5 +1,5 @@
 # FlowAgility Streaming Service (v.1.0.0)
-Some text about how cool we are :)
+Some into text goes here
 
 ## Contents
 - [Streaming API](#streaming-api)
