@@ -11,16 +11,6 @@ Need to do the streaming of an Agility Event that is running on FlowAgility plat
 ## Streaming API
 In order to receive actual data on participants, running in the certain ring, Streamer needs to connect via websocket to FA platform using the URL which is provided by the platform and which is unique to a certain event, date and ring. Information is then send as JSON message, which is having different structure, depending on the phase of the competition. The following description is covering the formats, statuses and variables, that are used in these JSON messages.
 
-
-## Flows and Statuses
-Event may have several trials. Each trial may have several runs. These runs may be different, but they are having the same structure. During the same day, event may have runs, running on the same ring, but representing different trials. Each trial is defining amount of brother-runs that have to be completed by participants for each category/grade/handler-type. There are usually 2 brother-runs, but sometimes there can be 3 brother-runs. After the last brother-run is completed, FA is giving combined results.
-
-Playset is representing a binomial, which is running in a certain run. Playset has information about the handler and the dog and also showing faults, refusals, disqualification and time, as well as class, speed and total penalizations. Playset may have several states. Each run starts with the first playset `ready` to run. At events where timer is connected to the platform, as soon as the dog crosses the start gates, the playset is set to `running`. On events without the timer connected, playset may be set to running with the first fault, refusal or when binom is eliminated. Playset is set into `calculated`, when binom data is submitted by the Judge Helper to the platform.
-
-JSON messages are sent on any updated of active run and also when binom is getting a fault, refusal, disqualification or when timer starts and stops (for events with timer only). JSON message is usually covering the run, where the binom is read/running/calculated and the next binom - whethere it is in the current run or in a new one - this information is presented in a `run_ready` structure. If `run` and `run_ready` runs names are equal, then the next binom is still from the same run, otherwise the next binom is from another run.
-
-After the playset is sbumitted, platform is doing calculation of the results and sends up to 10 best results for this run together with calculated current playset data.
-
 ## Flows and Statuses
 An Agility Event has one or more rings were all the competition takes place according to a predefined schedule. Independently of what trials and what runs happen on each ring, the information we will send is per ring per day, and fully organised according to the ring schedule. In situations where we will have “Combined Results”, they are added to the streaming information after the last run of those combined results is completed.
 
