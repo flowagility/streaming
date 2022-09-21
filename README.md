@@ -1,5 +1,5 @@
 # FlowAgility Streaming Service (v.1.0.0)
-Some intro text goes here
+Need to do the streaming of an Agility Event that is running on FlowAgility platform? No worries, we got your back! Here is all the information you need to be able to receive the best streaming data in real time. Any doubts just contact us - [info@flowagility.com](mailto:info@flowagility.com)
 
 ## Contents
 - [Streaming API](#streaming-api)
