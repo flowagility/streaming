@@ -7,6 +7,7 @@ Need to do the streaming of an Agility Event that is running on FlowAgility plat
 - [Requests & Responses](#request--response)
 - [JSON messages](#json-messages)
 - [Message Variables Format](#message-variables-format)
+- [Example](#example)
 
 ## Streaming API
 In order to receive actual data on participants, running in the certain ring, Streamer needs to connect via websocket to FA platform using the URL which is provided by the platform and which is unique to a certain event, date and ring. Information is then send as JSON message, which is having different structure, depending on the phase of the competition. The following description is covering the formats, statuses and variables, that are used in these JSON messages.
@@ -818,3 +819,9 @@ Playset structure:
 - `time` - time of the dog, represented with 2 or 3 decimals depending on the Federation requirements
 - `time_marker` - shows that dog marked the time, can be ["true", "false"]
 - `total_penalization` - total penalization time in seconds with 2 or 3 decimals depending on the Federation requirements
+
+
+## Example
+FlowAgility streaming Demo, created by [@malinantonsson](https://github.com/malinantonsson) can be found [here](https://github.com/malinantonsson/flow-agility-streaming-demo)
+
+
