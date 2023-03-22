@@ -63,9 +63,14 @@ The following examples are representing JSON messages which will be broadcasted 
       "faults": "0",
       "handler": "Julen Lázaro Martínez",
       "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx",
+      "judge_name": "Santa Claus",
+      "length": "200",
+      "maximum_time": "80.0",
+      "obstacles": "20",
       "qualification": "",
       "refusals": "0",
       "speed": "",
+      "standard_time": "67.82",
       "start_order": "1",
       "status_string": "ready",
       "time": "",
@@ -777,10 +782,15 @@ Event structure:
 - `timestamp` - UTC date and time when the message was sent
 
 Run structure:
+- `judge_name` - first and last name of the judge `Santa Claus`
+- `length` - length of the course in meters `200`
+- `maximum_time` - maximum time in seconds `80.0`
 - `name` - run's name without type, for example `G3 / S`
+- `obstacles` - number of obstacles `20`
 - `playset` - structure that represents playset information
 - `results_best` - array of the playsets, representing 10 best results - it is shown after the 1st submitted playset in this run
 - `results_combined` - array of the combined results - shown after the last playset of the last brother-run is submitted
+- `standard_time` - standard time in seconds `68.8`
 - `trial_name` - name of the trial, to which current run belongs
 - `type` - type of the run, can be `AG` for agility and `JP` for jumping   
 
