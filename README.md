@@ -136,7 +136,7 @@ When first playset is getting the Refusal
       "classification": "",
       "club": "Baix Llobregat",
       "country": "ES",
-      "disqualification": "elim",
+      "disqualification": "",
       "dog_age": "11 years",
       "dog_breed": "Poodle",
       "dog_family_name": "Mel",
