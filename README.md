@@ -95,7 +95,7 @@ The following examples are representing JSON messages which will be broadcasted 
       "classification": "",
       "club": "Baix Llobregat",
       "country": "ES",
-      "disqualification": "elim",
+      "disqualification": "",
       "dog_age": "11 years",
       "dog_breed": "Poodle",
       "dog_family_name": "Mel",
