@@ -833,6 +833,6 @@ Playset structure:
 
 ## Examples
 - FlowAgility streaming Demo - npm-based demo, some JScript knowledge is required. Created by [@malinantonsson](https://github.com/malinantonsson) can be found [here](https://github.com/malinantonsson/flow-agility-streaming-demo)
-- FlowAgility streaming Info - standalone, no programming skill required. Created by [@danebae](https://github.com/Danebae) can be found [here](https://github.com/Danebae/FlowAgilityStreamingInfo)
+- FlowAgility streaming Info - standalone, no programming skills required. Created by [@danebae](https://github.com/Danebae) can be found [here](https://github.com/Danebae/FlowAgilityStreamingInfo)
 
 
