@@ -47,6 +47,7 @@ The following examples are representing JSON messages which will be broadcasted 
   "ring_name": "1",
   "run": "",
   "run_ready": {
+    "length": "210",
     "name": "G3 / S",
     "playset": {
       "classification": "",
@@ -270,6 +271,7 @@ When first playset is getting the Refusal
   },
   "run_ready": {
     "name": "G3 / S",
+    "length": "210",
     "playset": {
       "classification": "1",
       "club": "Pawer",
@@ -478,6 +480,7 @@ When first playset is getting the Refusal
   },
   "run_ready": {
     "name": "G3 / S",
+    "length": "210",
     "playset": {
       "classification": "",
       "club": "Baix Llobregat",
@@ -613,6 +616,7 @@ When first playset is getting the Refusal
   },
   "run_ready": {
     "name": "G3 / S",
+    "length": "210",
     "playset": {
       "classification": "",
       "club": "Pawer",
