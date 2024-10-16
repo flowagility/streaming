@@ -74,6 +74,7 @@ The following examples are representing JSON messages which will be broadcasted 
       "standard_time": "67.82",
       "start_order": "1",
       "status_string": "ready",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -112,6 +113,7 @@ The following examples are representing JSON messages which will be broadcasted 
       "speed": "",
       "start_order": "1",
       "status_string": "running",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -153,6 +155,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "1",
       "status_string": "running",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -194,6 +197,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "1",
       "status_string": "running",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -235,6 +239,7 @@ When first playset is getting the Refusal
       "speed": "8.49 m/s",
       "start_order": "1",
       "status_string": "calculated",
+      "team_name": "",
       "time": "23.56",
       "time_marker": "true",
       "total_penalization": "15.00"
@@ -260,6 +265,7 @@ When first playset is getting the Refusal
         "speed": "8.49 m/s",
         "start_order": "1",
         "status_string": "calculated",
+        "team_name": "",
         "time": "23.56",
         "time_marker": "true",
         "total_penalization": "15.00"
@@ -292,6 +298,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "2",
       "status_string": "ready",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -330,6 +337,7 @@ When first playset is getting the Refusal
       "speed": "6.95 m/s",
       "start_order": "2",
       "status_string": "calculated",
+      "team_name": "",
       "time": "28.78",
       "time_marker": "true",
       "total_penalization": "5.00"
@@ -355,6 +363,7 @@ When first playset is getting the Refusal
         "speed": "6.95 m/s",
         "start_order": "2",
         "status_string": "calculated",
+        "team_name": "",
         "time": "28.78",
         "time_marker": "true",
         "total_penalization": "5.00"
@@ -379,6 +388,7 @@ When first playset is getting the Refusal
         "speed": "8.49 m/s",
         "start_order": "1",
         "status_string": "calculated",
+        "team_name": "",
         "time": "23.56",
         "time_marker": "false",
         "total_penalization": "15.00"
@@ -420,6 +430,7 @@ When first playset is getting the Refusal
       "speed": "6.95 m/s",
       "start_order": "2",
       "status_string": "calculated",
+      "team_name": "",
       "time": "28.78",
       "time_marker": "true",
       "total_penalization": "5.00"
@@ -445,6 +456,7 @@ When first playset is getting the Refusal
         "speed": "6.95 m/s",
         "start_order": "2",
         "status_string": "calculated",
+        "team_name": "",
         "time": "28.78",
         "time_marker": "true",
         "total_penalization": "5.00"
@@ -469,6 +481,7 @@ When first playset is getting the Refusal
         "speed": "8.49 m/s",
         "start_order": "1",
         "status_string": "calculated",
+        "team_name": "",
         "time": "23.56",
         "time_marker": "false",
         "total_penalization": "15.00"
@@ -539,6 +552,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "1",
       "status_string": "running",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -580,6 +594,7 @@ When first playset is getting the Refusal
       "speed": "6.90 m/s",
       "start_order": "1",
       "status_string": "calculated",
+      "team_name": "",
       "time": "29.00",
       "time_marker": "true",
       "total_penalization": "5.00"
@@ -605,6 +620,7 @@ When first playset is getting the Refusal
         "speed": "6.90 m/s",
         "start_order": "1",
         "status_string": "calculated",
+        "team_name": "",
         "time": "29.00",
         "time_marker": "true",
         "total_penalization": "5.00"
@@ -637,6 +653,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "2",
       "status_string": "ready",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": ""
@@ -675,6 +692,7 @@ When first playset is getting the Refusal
       "speed": "",
       "start_order": "2",
       "status_string": "calculated",
+      "team_name": "",
       "time": "",
       "time_marker": "false",
       "total_penalization": "100.00"
@@ -700,6 +718,7 @@ When first playset is getting the Refusal
         "speed": "6.90 m/s",
         "start_order": "1",
         "status_string": "calculated",
+        "team_name": "",
         "time": "29.00",
         "time_marker": "true",
         "total_penalization": "5.00"
@@ -724,6 +743,7 @@ When first playset is getting the Refusal
         "speed": "",
         "start_order": "2",
         "status_string": "calculated",
+        "team_name": "",
         "time": "",
         "time_marker": "false",
         "total_penalization": "100.00"
@@ -743,6 +763,7 @@ When first playset is getting the Refusal
         "dorsal": "41",
         "handler": "Anna Nogues Lopez",
         "id": "nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn",
+        "team_name": "",
         "time": "52.56",
         "total_penalization": "20.00"
       },
@@ -759,6 +780,7 @@ When first playset is getting the Refusal
         "dorsal": "9",
         "handler": "Julen Lázaro Martínez",
         "id": "mmmmmmmm-mmmm-mmmm-mmmm-mmmmmmmmmmmm",
+        "team_name": "",
         "time": "28.78",
         "total_penalization": "105.00"
       }
@@ -830,6 +852,7 @@ Playset structure:
   - `ready` - is next to run
   - `running` - currently running
   - `calculated` - already finished with calculated results
+- `team_name` - name of the team (if the Team's run)
 - `time` - time of the dog, represented with 2 or 3 decimals depending on the Federation requirements
 - `time_marker` - shows that dog marked the time, can be ["true", "false"]
 - `total_penalization` - total penalization time in seconds with 2 or 3 decimals depending on the Federation requirements
